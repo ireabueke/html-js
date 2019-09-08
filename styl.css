@@ -85,3 +85,11 @@ textarea{
     transition: all 0.5s ease;
   }
 
+.forms{
+    display: table-cell;
+    margin-left: 50px;
+    max-width: 350px;
+    padding: 1cm;
+    background: rgb(31, 36, 10);
+}
+
