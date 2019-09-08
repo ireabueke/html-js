@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>emmanuel home page</title>   
         <link rel="stylesheet" href="styl.css">
-        <script src="main.js"></script>
     </head>
     <body>
         <div class="container">
@@ -30,16 +29,18 @@
                     Religion : &emsp; &emsp;LOVE<br>
                     Nationality : &emsp; &emsp;NIGERIA</li><br>
 
-            <h3>EDUCATIONAL BACKGROUND</h3>
+            
                 
-                   <li> St.Peter primary School Umueze Uga<br>
+                   <li><h3>EDUCATIONAL BACKGROUND</h3>
+                     St.Peter primary School Umueze Uga<br>
                     Ojodu junior Grammar School Ikeja Lagos<br>
                     Government Technical College, Agidingbi Ikeja (Electronics work)</li> 
                 </ul>                
                 <ol> 
-            <h3>WORKING EXPERIENCES</h3>
             
-                <li>Awgbu watchdog Nigeria ltd IT<br>
+            
+                <li><h3>WORKING EXPERIENCES</h3>
+                    Awgbu watchdog Nigeria ltd IT<br>
                 Samsung Engineering Academy Training<br>
                 Access power (inverter construction) Training<br>
                 Technologram Training (embedded system)<br>
@@ -47,12 +48,15 @@
                 New horizons Training (java)<br>
                 Pointek Phone Engineer</li>
             
-            <h3>HOBBIES</h3>
-                <li>Hand work<br>
+            
+                <li><h3>HOBBIES</h3>
+                    Hand work<br>
                 Skills in electronics</li>
             
-            <h3>REFEREES</h3>
-               <li> Mrs Adimora Ifeoma<br>
+            
+               <li>
+                    <h3>REFEREES</h3>   
+                Mrs Adimora Ifeoma<br>
                     Tel: 08035529277<br>
                     Assistant director of Education (RTD)<br>
                
@@ -63,45 +67,44 @@
             </ol>
             
 
-            <div class="forms" id="myForm" onsubmit="return validation()">
+            <div class="forms" name="myForm" onsubmit="return validation()">
                 <h2>Contact me</h2>
-                <form>
+                <form method="post" action="#">
 
-                        <div id="error_message">
-
-                        </div>
-                        <label>
-                                Name 
-                                <input type="text" id="name"/>
-                            </label>
-                       <label>
+                        <div name="error_message"></div>
+                        <label>Name <input type="text" name="name" minlength="12" required
+          placeholder="Name"/></label>
                     <label>
                             Phone 
-                            <input type="number" id="phone"/>
+                            <input type="rel" name="phone" minlength="11" required
+          placeholder="08136690123"/>
                         </label>
                    <label>
                        E-mail 
-                       <input type="email" id="email"/>
+                       <input type="email" name="email"  required
+          placeholder="somebody@example.com"/>
                    </label>
                    <label>
                          Title
-                        <input type="text" id="title"/>
+                        <input type="text" name="title" minlength="12"  required
+          placeholder="Title of your message."/>
                     </label>
                     <label>
                             Message 
-                            <textarea id="message"></textarea>
+                            <textarea name="message"  minlength="20" 
+          required
+          placeholder="Your message goes here...     20 characters minimum."></textarea>
                         </label>
 
-                        <button type="submit" id="btn">SEND</button>
+                        <input type="submit" name= "submit"/>
                 </form>
                
             </div>
 
         </div>
-            
+
+       
+
     </body>
     <footer>Umeozokere &copy:2019</footer>
 </html>
-
-
-
